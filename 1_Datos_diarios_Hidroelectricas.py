@@ -1,3 +1,5 @@
+# ---------- dashboard_hidroelectricas.py COMPLETO Y CORREGIDO ----------
+
 import pandas as pd
 import psycopg2
 import folium
@@ -152,13 +154,14 @@ def crear_mapa(df_diario, output_dir):
         archivo_html = f"TAB_1/grafico_{nombre_clean}.html"
 
         popup_html = f"""
-        <div style='font-family: Segoe UI; font-size: 14px;'>
+        <div style='font-family: Segoe UI; font-size: 16px;'>
             <strong>{nombre}</strong><br>
             📍 Lat: {lat:.4f}<br>
             📍 Lon: {lon:.4f}<br>
-            <a href="{archivo_html}" target="_blank">📈 Ver gráfico</a>
+            <a href='{archivo_html}' target='_blank' style='color: #0984e3;'>📈 Ver gráfico</a>
         </div>
         """
+
         folium.Marker(
             location=[lat, lon],
             popup=folium.Popup(popup_html, max_width=300),
