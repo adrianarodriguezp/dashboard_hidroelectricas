@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dashboard Hidroeléctricas - INAMHI</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: #f4f4f4;
-            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
             padding: 2em;
+            text-align: center;
         }
         h1 {
             color: #0a3d62;
+            margin-bottom: 0.2em;
+        }
+        p.subtitle {
+            color: #2d3436;
+            font-size: 1.1em;
+            margin-bottom: 2em;
         }
         .tabs {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5em;
-            margin-top: 2em;
         }
         .tab-box {
-            background: white;
+            background-color: white;
             border: 1px solid #ccc;
-            border-radius: 10px;
-            width: 250px;
+            border-radius: 12px;
+            width: 260px;
             padding: 1.5em;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .tab-box:hover {
-            transform: scale(1.05);
+            transform: scale(1.04);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
         }
-        a {
+        .tab-box h3 {
+            margin-top: 0;
+            color: #0a3d62;
+        }
+        .tab-box p {
+            color: #636e72;
+            font-size: 0.95em;
+            margin-bottom: 1.2em;
+        }
+        .tab-box a {
+            display: inline-block;
+            padding: 0.5em 1.2em;
+            background-color: #0984e3;
+            color: white;
+            border-radius: 8px;
             text-decoration: none;
-            color: #0984e3;
             font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .tab-box a:hover {
+            background-color: #0652dd;
         }
     </style>
 </head>
 <body>
     <h1>Dashboard Hidroeléctricas - Ecuador</h1>
-    <p>Visualización interactiva de datos diarios e históricos de caudal</p>
+    <p class="subtitle">Visualización interactiva de caudales diarios históricos e información en tiempo real</p>
 
     <div class="tabs">
         <div class="tab-box">
             <h3>TAB_1</h3>
-            <p>Mapa interactivo con promedio diario de caudales</p>
-            <a href="mapa_diario_hidro.html" target="_blank">Ir al Mapa</a>
+            <p>Mapa interactivo con promedio diario de caudales desde 2020</p>
+            <a href="mapa_diario_hidro.html" target="_blank">📍 Ir al Mapa</a>
         </div>
         <div class="tab-box">
             <h3>TAB_2</h3>
-            <p>Comparación mensual con históricos</p>
-            <a href="#" onclick="alert('Próximamente'); return false;">Disponible pronto</a>
+            <p>Comparación mensual de caudales con datos históricos</p>
+            <a href="#" onclick="alert('Módulo disponible próximamente'); return false;">🔜 Disponible pronto</a>
         </div>
         <div class="tab-box">
             <h3>TAB_3</h3>
-            <p>Caudal horario en tiempo real</p>
-            <a href="#" onclick="alert('Próximamente'); return false;">Disponible pronto</a>
+            <p>Caudales horarios en tiempo real por estación</p>
+            <a href="#" onclick="alert('Módulo disponible próximamente'); return false;">🔜 Disponible pronto</a>
         </div>
     </div>
 </body>
