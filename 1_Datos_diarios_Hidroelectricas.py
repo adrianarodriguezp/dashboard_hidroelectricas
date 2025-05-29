@@ -1,5 +1,3 @@
-# ---------- dashboard_hidroelectricas.py COMPLETO Y CORREGIDO ----------
-
 import pandas as pd
 import psycopg2
 import folium
@@ -70,64 +68,64 @@ def generar_grafico_estacion(df_est, nombre_estacion, output_dir):
 
     html_content = f"""
 <!DOCTYPE html>
-<html lang="es">
+<html lang=\"es\">
 <head>
-    <meta charset="UTF-8">
+    <meta charset=\"UTF-8\">
     <title>Caudal Diario Promedio - {nombre_estacion}</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src=\"https://cdn.plot.ly/plotly-latest.min.js\"></script>
+    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css\">
+    <script src=\"https://cdn.jsdelivr.net/npm/flatpickr\"></script>
 </head>
 <body>
     <h2>Caudal Diario Promedio - {nombre_estacion}</h2>
 
-    <label for="fecha-inicial">Fecha Inicial:</label>
-    <input type="text" id="fecha-inicial" placeholder="Selecciona fecha inicial">
+    <label for=\"fecha-inicial\">Fecha Inicial:</label>
+    <input type=\"text\" id=\"fecha-inicial\" placeholder=\"Selecciona fecha inicial\">
 
-    <label for="fecha-final">Fecha Final:</label>
-    <input type="text" id="fecha-final" placeholder="Selecciona fecha final">
+    <label for=\"fecha-final\">Fecha Final:</label>
+    <input type=\"text\" id=\"fecha-final\" placeholder=\"Selecciona fecha final\">
 
-    <button onclick="filtrar()">Filtrar</button>
+    <button onclick=\"filtrar()\">Filtrar</button>
 
-    <div id="grafico" style="width:100%; height:600px;"></div>
+    <div id=\"grafico\" style=\"width:100%; height:600px;\"></div>
 
     <script>
-    flatpickr("#fecha-inicial", {{dateFormat: "Y-m-d"}});
-    flatpickr("#fecha-final", {{dateFormat: "Y-m-d"}});
+    flatpickr("#fecha-inicial", {dateFormat: "Y-m-d"});
+    flatpickr("#fecha-final", {dateFormat: "Y-m-d"});
 
     const registros = {data_json};
 
-    function filtrar() {{
+    function filtrar() {
         const inicio = document.getElementById('fecha-inicial').value;
         const fin = document.getElementById('fecha-final').value;
 
-        if (!inicio || !fin) {{
+        if (!inicio || !fin) {
             alert("Por favor selecciona ambas fechas.");
             return;
-        }}
+        }
 
-        const data_filtrada = registros.filter(r => {{
+        const data_filtrada = registros.filter(r => {
             const f = new Date(r.Fecha);
             return f >= new Date(inicio) && f <= new Date(fin);
-        }});
+        });
 
-        const trace = {{
+        const trace = {
             x: data_filtrada.map(r => r.Fecha),
             y: data_filtrada.map(r => r["Caudal Diario Promedio"]),
             mode: 'lines+markers',
             type: 'scatter',
             name: 'Caudal Diario Promedio',
-            line: {{color: 'royalblue'}}
-        }};
+            line: {color: 'royalblue'}
+        };
 
-        const layout = {{
-            xaxis: {{ title: 'Fecha' }},
-            yaxis: {{ title: 'Q Diario (m³/s)' }},
+        const layout = {
+            xaxis: { title: 'Fecha' },
+            yaxis: { title: 'Q Diario (m³/s)' },
             height: 600
-        }};
+        };
 
         Plotly.newPlot('grafico', [trace], layout);
-    }}
+    }
 
     window.onload = filtrar;
     </script>
@@ -154,11 +152,11 @@ def crear_mapa(df_diario, output_dir):
         archivo_html = f"TAB_1/grafico_{nombre_clean}.html"
 
         popup_html = f"""
-        <div style='font-family: Segoe UI; font-size: 16px;'>
-            <strong>{nombre}</strong><br>
+        <div style='font-family: Segoe UI; font-size: 15px;'>
+            <strong style='font-size:16px'>{nombre}</strong><br>
             📍 Lat: {lat:.4f}<br>
             📍 Lon: {lon:.4f}<br>
-            <a href='{archivo_html}' target='_blank' style='color: #0984e3;'>📈 Ver gráfico</a>
+            <a href=\"{archivo_html}\" target=\"_blank\">📈 Ver gráfico</a>
         </div>
         """
 
