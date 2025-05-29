@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Hidroeléctricas - INAMHI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 2em;
+        }
+        h1 {
+            color: #0a3d62;
+        }
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+        .tab-box {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 1.5em;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .tab-box:hover {
+            transform: scale(1.05);
+        }
+        a {
+            text-decoration: none;
+            color: #0984e3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Hidroeléctricas - Ecuador</h1>
+    <p>Visualización interactiva de datos diarios e históricos de caudal</p>
+
+    <div class="tabs">
+        <div class="tab-box">
+            <h3>TAB_1</h3>
+            <p>Mapa interactivo con promedio diario de caudales</p>
+            <a href="mapa_diario_hidro.html" target="_blank">Ir al Mapa</a>
+        </div>
+        <div class="tab-box">
+            <h3>TAB_2</h3>
+            <p>Comparación mensual con históricos</p>
+            <a href="#" onclick="alert('Próximamente'); return false;">Disponible pronto</a>
+        </div>
+        <div class="tab-box">
+            <h3>TAB_3</h3>
+            <p>Caudal horario en tiempo real</p>
+            <a hr
