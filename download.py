@@ -44,7 +44,7 @@ def cargar_coordenadas_manual():
     # Mapeo directo de todas las estaciones conocidas
     coordenadas_estaciones = {
         "Agoyan": [-1.3977000, -78.3829000],
-        "Coca Codo Sinclair": [-0.1364378, -77.4727695],
+        "Coca Codo Sinclair": [-0.1989618, -77.6827073],
         "Delsitanisagua": [-3.9803410, -79.0169830],
         "Mazar": [-2.5972000, -78.6221000],
         "M_S_Francisco": [-3.3150547, -79.4821319],
@@ -364,8 +364,8 @@ def main():
                 print("\n--- PROCESANDO CAUDALES ---")
                 listar_directorio_ftp(ftp)
                 
-                # Explorar carpeta 2025 (la más reciente)
-                if navegar_ftp(ftp, '2025'):
+                # Explorar carpeta 2026 (la más reciente)
+                if navegar_ftp(ftp, '2026'):
                     listar_directorio_ftp(ftp)
                     explorar_directorio(ftp, 'caudales', conn, ultima_fecha_caudales)
                     # Volver a carpeta caudales
@@ -379,8 +379,8 @@ def main():
                 print("\n--- PROCESANDO NIVELES ---")
                 listar_directorio_ftp(ftp)
                 
-                # Explorar carpeta 2025 (la más reciente)
-                if navegar_ftp(ftp, '2025'):
+                # Explorar carpeta 2026 (la más reciente)
+                if navegar_ftp(ftp, '2026'):
                     listar_directorio_ftp(ftp)
                     explorar_directorio(ftp, 'nivel', conn, ultima_fecha_nivel)
                     # Volver a carpeta niveles

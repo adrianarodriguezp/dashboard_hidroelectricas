@@ -9,11 +9,18 @@ import os
 from pathlib import Path
 
 def config(filename='config.ini', section='Postgres'):
+    # ✅ Leer SIEMPRE desde la carpeta del script, no desde el CWD del cron
+    cfg_path = Path(__file__).parent / filename
+
     parser = ConfigParser()
-    parser.read(filename)
+    read_files = parser.read(cfg_path, encoding="utf-8")
+    if not read_files:
+        raise FileNotFoundError(f"❌ No se pudo leer el archivo de configuración: {cfg_path}")
+
     if not parser.has_section(section):
-        raise Exception(f'❌ Error: la sección [{section}] no se encuentra en {filename}')
-    return {param[0]: param[1] for param in parser.items(section)}
+        raise Exception(f"❌ Error: la sección [{section}] no se encuentra en {cfg_path}")
+
+    return {k: v for k, v in parser.items(section)}
 
 def get_data():
     params = config()
@@ -27,11 +34,12 @@ def get_data():
     query = """
     SELECT nombre_estacion, latitud, longitud, fecha_toma_dato, valor_1h
     FROM temporales.caudales
-    WHERE fecha_toma_dato >= '2020-01-01'
+    WHERE fecha_toma_dato >= '2009-01-01'
     """
     df = pd.read_sql(query, conn)
     conn.close()
     df['fecha_toma_dato'] = pd.to_datetime(df['fecha_toma_dato'])
+    df = df.dropna(subset=["valor_1h"])  # ✅ Aquí eliminamos los registros con NaN
     df['fecha_real'] = df['fecha_toma_dato'] - pd.to_timedelta("30min")
     df['fecha_dia'] = df['fecha_real'].dt.date
     return df
@@ -148,11 +156,18 @@ if __name__ == "__main__":
     df = get_data()
     print("📊 Calculando promedio diario por estación...")
     df_diario = create_diario(df)
+
+    # ✅ Guardar CSV con todos los datos diarios
+    csv_path = Path(__file__).parent / "promedio_diario_todas_estaciones.csv"
+    df_diario.to_csv(csv_path, index=False, encoding='utf-8')
+    print(f"📝 CSV generado con datos diarios: {csv_path.name}")
+
     print("📈 Generando gráficos para todas las estaciones...")
     output_dir = Path(__file__).parent / "TAB_1"
     output_dir.mkdir(exist_ok=True)
     for nombre_estacion in df_diario['nombre_estacion'].unique():
         df_est = df_diario[df_diario['nombre_estacion'] == nombre_estacion]
         generar_grafico_estacion(df_est, nombre_estacion, output_dir)
+
     print("🌍 Generando mapa interactivo...")
     crear_mapa(df_diario, output_dir)

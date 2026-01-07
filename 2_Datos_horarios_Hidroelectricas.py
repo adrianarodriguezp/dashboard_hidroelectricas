@@ -36,6 +36,9 @@ def get_data_horario():
     SELECT nombre_estacion, latitud, longitud, fecha_toma_dato, valor_1h
     FROM temporales.caudales
     WHERE fecha_toma_dato >= '2009-01-01'
+      AND valor_1h IS NOT NULL
+      AND TRIM(valor_1h::text) NOT ILIKE 'nan'
+      AND valor_1h > 0
     """
     df = pd.read_sql(query, conn)
     conn.close()
@@ -114,11 +117,14 @@ def generar_grafico_estacion_horario(df_est, nombre_estacion, output_dir):
             y: datos.map(r => r["valor_1h"]),
             mode: 'lines+markers',
             type: 'scatter',
-            name: 'Q 1h (m³/s)'
+            name: 'Q 1h (m³/s)',
+            // ✅ 2 decimales en el tooltip y fecha legible
+            hovertemplate: '%{{y:.2f}} m³/s<br>%{{x|%Y-%m-%d %H:%M}}<extra></extra>'
         }};
         const layout = {{
             xaxis: {{ title: 'Fecha-Hora' }},
-            yaxis: {{ title: 'Q 1h (m³/s)' }},
+            // ✅ 2 decimales en los ticks del eje Y
+            yaxis: {{ title: 'Q 1h (m³/s)', tickformat: '.2f' }},
             height: 600
         }};
         Plotly.newPlot('grafico', [trace], layout);
@@ -217,20 +223,3 @@ if __name__ == "__main__":
     crear_mapa_horario(df_h)
 
     print("✅ Proceso horario finalizado.")
-
-    # Git push automático para TAB_3
-    try:
-        print("📤 Subiendo cambios de TAB_3 a GitHub...")
-        repo_dir = "/home/srvdpahidrologia/CENACE"
-        subprocess.run(["git", "-C", repo_dir, "add", "TAB_3/*.html", "mapa_horario_hidro.html", "horario_todas_estaciones.csv"], check=True)
-        
-        # Verificar si hay cambios para evitar commits vacíos
-        result = subprocess.run(["git", "-C", repo_dir, "diff", "--cached", "--quiet"])
-        if result.returncode != 0:
-            subprocess.run(["git", "-C", repo_dir, "commit", "-m", f"🚀 Auto actualización diaria (horario): {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M')}"], check=True)
-            subprocess.run(["git", "-C", repo_dir, "push", "origin", "main"], check=True)
-            print("✅ Cambios de TAB_3 subidos correctamente.")
-        else:
-            print("⚠️ No hay cambios para subir en TAB_3.")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Error subiendo cambios a GitHub: {e}")
