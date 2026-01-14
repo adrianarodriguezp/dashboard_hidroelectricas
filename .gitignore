@@ -1,2 +1,31 @@
+*.docx
+
+# Entornos y config
 venv/
 config.ini
+
+# Logs y estado
+*.log
+last_processed_ts.txt
+
+# Outputs grandes (NO subir a GitHub)
+*.csv
+*.json
+
+# Outputs específicos TAB_3 (por si acaso)
+TAB_3/*.csv
+TAB_3/*.json
+
+# Backups y copias
+*.bak
+* - copia.py
+download.py.bak_*
+sync_if_new_hour.py.bak
+
+# Carpetas locales de trabajo
+Anteriores/
+MIGRA_RELLENO/
+TAB_4/
+TAB_5/
+state/
+
