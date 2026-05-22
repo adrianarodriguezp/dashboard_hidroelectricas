@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TAB_4 - Comparación de caudal diario</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 28px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+        .header h1 {
+            margin-bottom: 8px;
+            color: #0b4b84;
+        }
+        .header p {
+            margin-top: 0;
+            color: #5b6b7c;
+            font-size: 18px;
+        }
+        .back {
+            display: inline-block;
+            margin-bottom: 22px;
+            text-decoration: none;
+            background: #0b72d9;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .notice {
+            background: #eaf4ff;
+            border-left: 5px solid #0b72d9;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            color: #16456d;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 18px;
+        }
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 24px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #0b4b84;
+        }
+        .card p {
+            margin: 8px 0;
+        }
+        .btn-mini {
+            display: inline-block;
+            margin-top: 10px;
+            background: #0b72d9;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back" href="../index.html">⬅ Volver al dashboard</a>
+
+        <div class="header">
+            <h1>TAB_4 - Comparación de caudal diario (2024, 2025, 2026)</h1>
+            <p>Comparación diaria interactiva por hidroeléctrica, con selección de fecha inicial y final</p>
+        </div>
+
+        <div class="notice">
+            <b>Nota:</b> Las tarjetas muestran el último día diario disponible como referencia y el caudal diario de ese mismo mes-día para 2024, 2025 y 2026. Dentro de cada gráfico se puede seleccionar otro periodo.
+        </div>
+
+        <div class="grid">
+            
+        <a class="card-link" href="grafico_Agoyan.html">
+            <div class="card">
+                <h3>Agoyan</h3>
+                <p><b>Último día diario:</b> 2026-05-21</p>
+                <p><b>Caudal 2024:</b> 199.42 m³/s</p>
+                <p><b>Caudal 2025:</b> 367.77 m³/s</p>
+                <p><b>Caudal 2026:</b> 131.80 m³/s</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Amaluza_Laterales.html">
+            <div class="card">
+                <h3>Amaluza Laterales</h3>
+                <p><b>Último día diario:</b> Sin dato</p>
+                <p><b>Caudal 2024:</b> Sin dato</p>
+                <p><b>Caudal 2025:</b> Sin dato</p>
+                <p><b>Caudal 2026:</b> Sin dato</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Amaluza_Total.html">
+            <div class="card">
+                <h3>Amaluza Total</h3>
+                <p><b>Último día diario:</b> Sin dato</p>
+                <p><b>Caudal 2024:</b> Sin dato</p>
+                <p><b>Caudal 2025:</b> Sin dato</p>
+                <p><b>Caudal 2026:</b> Sin dato</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Coca_Codo_Sinclair.html">
+            <div class="card">
+                <h3>Coca Codo Sinclair</h3>
+                <p><b>Último día diario:</b> 2026-05-21</p>
+                <p><b>Caudal 2024:</b> 762.88 m³/s</p>
+                <p><b>Caudal 2025:</b> 618.33 m³/s</p>
+                <p><b>Caudal 2026:</b> 1709.90 m³/s</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Daule_Peripa.html">
+            <div class="card">
+                <h3>Daule Peripa</h3>
+                <p><b>Último día diario:</b> Sin dato</p>
+                <p><b>Caudal 2024:</b> Sin dato</p>
+                <p><b>Caudal 2025:</b> Sin dato</p>
+                <p><b>Caudal 2026:</b> Sin dato</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Delsitanisagua.html">
+            <div class="card">
+                <h3>Delsitanisagua</h3>
+                <p><b>Último día diario:</b> 2026-05-21</p>
+                <p><b>Caudal 2024:</b> 86.30 m³/s</p>
+                <p><b>Caudal 2025:</b> 48.38 m³/s</p>
+                <p><b>Caudal 2026:</b> 150.13 m³/s</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_M_S_Francisco.html">
+            <div class="card">
+                <h3>M S Francisco</h3>
+                <p><b>Último día diario:</b> Sin dato</p>
+                <p><b>Caudal 2024:</b> Sin dato</p>
+                <p><b>Caudal 2025:</b> Sin dato</p>
+                <p><b>Caudal 2026:</b> Sin dato</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Mazar.html">
+            <div class="card">
+                <h3>Mazar</h3>
+                <p><b>Último día diario:</b> 2026-05-21</p>
+                <p><b>Caudal 2024:</b> 130.43 m³/s</p>
+                <p><b>Caudal 2025:</b> 186.01 m³/s</p>
+                <p><b>Caudal 2026:</b> 117.26 m³/s</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        <a class="card-link" href="grafico_Pisayambo.html">
+            <div class="card">
+                <h3>Pisayambo</h3>
+                <p><b>Último día diario:</b> 2026-05-21</p>
+                <p><b>Caudal 2024:</b> 14.93 m³/s</p>
+                <p><b>Caudal 2025:</b> 15.32 m³/s</p>
+                <p><b>Caudal 2026:</b> 5.45 m³/s</p>
+                <div class="btn-mini">📈 Ver comparación diaria</div>
+            </div>
+        </a>
+        
+        </div>
+    </div>
+</body>
+</html>

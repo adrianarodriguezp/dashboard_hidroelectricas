@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TAB_4 - Amaluza Total</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 28px;
+        }
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            background: #0b72d9;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .panel {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+            margin-bottom: 18px;
+        }
+        h1 {
+            color: #0b4b84;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            color: #5b6b7c;
+            font-size: 17px;
+            margin-top: 0;
+        }
+        .controls {
+            display: flex;
+            gap: 12px;
+            align-items: end;
+            flex-wrap: wrap;
+        }
+        .control {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        label {
+            font-weight: 700;
+            color: #334155;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            min-width: 170px;
+            font-size: 15px;
+        }
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 11px 16px;
+            cursor: pointer;
+            font-weight: 700;
+            color: white;
+            background: #0b72d9;
+        }
+        button.secondary {
+            background: #64748b;
+        }
+        .note {
+            margin-top: 10px;
+            color: #64748b;
+            font-size: 14px;
+        }
+        #grafico {
+            width: 100%;
+            height: 650px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back" href="index.html">⬅ Volver a TAB_4</a>
+
+        <div class="panel">
+            <h1>Comparación de caudal diario - Amaluza Total</h1>
+            <p class="subtitle">Comparación del mismo periodo calendario entre 2024, 2025 y 2026</p>
+
+            <div class="controls">
+                <div class="control">
+                    <label for="fecha-inicial">Fecha inicial</label>
+                    <input type="text" id="fecha-inicial" value="2026-05-01">
+                </div>
+                <div class="control">
+                    <label for="fecha-final">Fecha final</label>
+                    <input type="text" id="fecha-final" value="2026-05-15">
+                </div>
+                <button onclick="filtrar()">Actualizar gráfico</button>
+                <button class="secondary" onclick="restablecer()">Últimos 30 días</button>
+            </div>
+
+            <div class="note">
+                Selecciona fechas usando el año 2026 como referencia. El gráfico compara automáticamente ese mismo mes-día en 2024, 2025 y 2026.
+            </div>
+        </div>
+
+        <div class="panel">
+            <div id="grafico"></div>
+        </div>
+    </div>
+
+<script>
+const registros = [];
+const defaultIni = "2026-05-01";
+const defaultFin = "2026-05-15";
+const colores = {
+    2024: "#d62728",
+    2025: "#2ca02c",
+    2026: "#1f77b4"
+};
+
+flatpickr("#fecha-inicial", { dateFormat: "Y-m-d", defaultDate: defaultIni });
+flatpickr("#fecha-final", { dateFormat: "Y-m-d", defaultDate: defaultFin });
+
+function pad(n) {
+    return String(n).padStart(2, "0");
+}
+
+function rangoMMDD(inicioStr, finStr) {
+    const ini = new Date(inicioStr + "T00:00:00");
+    const fin = new Date(finStr + "T00:00:00");
+    const lista = [];
+    let d = new Date(ini);
+    while (d <= fin) {
+        lista.push(pad(d.getMonth() + 1) + "-" + pad(d.getDate()));
+        d.setDate(d.getDate() + 1);
+    }
+    return lista;
+}
+
+function etiquetaDesdeMMDD(md) {
+    const meses = {
+        "01": "ene", "02": "feb", "03": "mar", "04": "abr", "05": "may", "06": "jun",
+        "07": "jul", "08": "ago", "09": "sep", "10": "oct", "11": "nov", "12": "dic"
+    };
+    const [m, d] = md.split("-");
+    return d + "-" + meses[m];
+}
+
+function filtrar() {
+    const inicio = document.getElementById("fecha-inicial").value;
+    const fin = document.getElementById("fecha-final").value;
+
+    if (!inicio || !fin) {
+        alert("Selecciona fecha inicial y fecha final.");
+        return;
+    }
+
+    if (new Date(inicio + "T00:00:00") > new Date(fin + "T00:00:00")) {
+        alert("La fecha inicial no puede ser mayor que la fecha final.");
+        return;
+    }
+
+    const mdRango = rangoMMDD(inicio, fin);
+    const trazas = [];
+
+    [2024, 2025, 2026].forEach(anio => {
+        const serie = mdRango.map((md, idx) => {
+            const r = registros.find(x => Number(x.Anio) === anio && x.Mes_Dia === md);
+            return {
+                x: idx + 1,
+                etiqueta: etiquetaDesdeMMDD(md),
+                fecha: anio + "-" + md,
+                y: r ? r["Caudal Diario Promedio"] : null
+            };
+        });
+
+        trazas.push({
+            x: serie.map(r => r.x),
+            y: serie.map(r => r.y),
+            customdata: serie.map(r => [r.fecha, r.etiqueta]),
+            mode: "lines+markers",
+            type: "scatter",
+            name: String(anio),
+            line: { color: colores[anio], width: 3, dash: anio === 2026 ? "dash" : "solid" },
+            marker: { color: colores[anio], size: 7 },
+            hovertemplate:
+                "Año: " + anio + "<br>" +
+                "Fecha: %{customdata[0]}<br>" +
+                "Etiqueta: %{customdata[1]}<br>" +
+                "Caudal: %{y:.2f} m³/s<extra></extra>"
+        });
+    });
+
+    let paso = 1;
+    if (mdRango.length > 45 && mdRango.length <= 90) paso = 5;
+    else if (mdRango.length > 90 && mdRango.length <= 180) paso = 10;
+    else if (mdRango.length > 180) paso = 15;
+
+    let tickvals = [];
+    let ticktext = [];
+    mdRango.forEach((md, idx) => {
+        if (idx % paso === 0 || idx === mdRango.length - 1) {
+            tickvals.push(idx + 1);
+            ticktext.push(etiquetaDesdeMMDD(md));
+        }
+    });
+
+    const layout = {
+        title: "Caudal diario comparado - Amaluza Total<br><sup>Periodo seleccionado: " + inicio + " al " + fin + "</sup>",
+        xaxis: {
+            title: "Periodo comparado",
+            tickmode: "array",
+            tickvals: tickvals,
+            ticktext: ticktext,
+            tickangle: -45
+        },
+        yaxis: {
+            title: "Caudal Diario Promedio (m³/s)",
+            tickformat: ".2f"
+        },
+        hovermode: "x unified",
+        template: "plotly_white",
+        height: 650,
+        legend: { title: { text: "Año" } },
+        margin: { l: 70, r: 30, t: 90, b: 90 }
+    };
+
+    Plotly.newPlot("grafico", trazas, layout, {responsive: true});
+}
+
+function restablecer() {
+    document.getElementById("fecha-inicial").value = defaultIni;
+    document.getElementById("fecha-final").value = defaultFin;
+    filtrar();
+}
+
+window.onload = filtrar;
+</script>
+</body>
+</html>
