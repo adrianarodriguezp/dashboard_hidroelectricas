@@ -6,10 +6,14 @@ from ftplib import FTP
 from datetime import datetime
 import io
 import re
+from pathlib import Path
 
 # Leer archivo de configuración
 config = configparser.ConfigParser()
-config.read('config.ini')
+project_root = Path(os.environ.get('CENACE_ROOT', Path(__file__).resolve().parent)).resolve()
+config_path = project_root / 'config.ini'
+if not config.read(config_path, encoding='utf-8'):
+    raise FileNotFoundError(f"No se pudo leer la configuración: {config_path}")
 
 # Configuración de PostgreSQL
 pg_host = config['Postgres']['host']
@@ -337,7 +341,7 @@ def main():
     # Conectar a la base de datos
     conn = conectar_bd()
     if not conn:
-        return
+        return 1
     
     try:
         # Modificar tablas para soportar valores de coordenadas más grandes
@@ -394,11 +398,14 @@ def main():
         
     except Exception as e:
         print(f"Error general: {e}")
+        return 1
     finally:
         # Cerrar conexión a la base de datos
         if conn:
             conn.close()
             print("Conexión a la base de datos cerrada")
 
+    return 0
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

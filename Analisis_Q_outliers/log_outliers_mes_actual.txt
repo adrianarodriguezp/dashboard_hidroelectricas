@@ -1,0 +1,908 @@
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,454
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,670
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,886
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 6,102
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 6,318
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 0
+✅ Estaciones encontradas: 0
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+Traceback (most recent call last):
+  File "/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py", line 568, in <module>
+    main()
+  File "/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py", line 541, in main
+    df_resumen = pd.DataFrame(resumenes).sort_values("nombre_estacion")
+  File "/home/srvdpahidrologia/CENACE/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 7189, in sort_values
+    k = self._get_label_or_level_values(by[0], axis=axis)
+  File "/home/srvdpahidrologia/CENACE/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'nombre_estacion'
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 216
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 432
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 630
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 846
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 1,062
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 1,278
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 1,485
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 1,701
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 1,908
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 2,124
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 2,340
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 2,556
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 2,772
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 2,988
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 3,204
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 3,420
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 3,636
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 3,852
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 4,068
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 4,284
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 4,500
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 4,716
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 4,932
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,148
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,364
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,580
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 5,796
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 6,012
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 6,228
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 0
+✅ Estaciones encontradas: 0
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+Traceback (most recent call last):
+  File "/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py", line 568, in <module>
+    main()
+  File "/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py", line 541, in main
+    df_resumen = pd.DataFrame(resumenes).sort_values("nombre_estacion")
+  File "/home/srvdpahidrologia/CENACE/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 7189, in sort_values
+    k = self._get_label_or_level_values(by[0], axis=axis)
+  File "/home/srvdpahidrologia/CENACE/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'nombre_estacion'
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 216
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 432
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 639
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.
+/home/srvdpahidrologia/CENACE/Analisis_Q_outliers/Analisis_Q_outliers_mes_actual.py:126: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+🔄 Conectando a la base de datos...
+✅ Configuración leída desde: /home/srvdpahidrologia/CENACE/config.ini
+✅ Registros del mes actual leídos: 846
+✅ Estaciones encontradas: 9
+📝 CSV del mes actual guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_original.csv
+📍 Procesando 1/9: Agoyan
+📍 Procesando 2/9: Amaluza_Laterales
+📍 Procesando 3/9: Amaluza_Total
+📍 Procesando 4/9: Coca Codo Sinclair
+📍 Procesando 5/9: Daule_Peripa
+📍 Procesando 6/9: Delsitanisagua
+📍 Procesando 7/9: M_S_Francisco
+📍 Procesando 8/9: Mazar
+📍 Procesando 9/9: Pisayambo
+📊 Resumen guardado en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/05_resumen_estaciones/resumen_outliers_por_estacion.csv
+📝 CSV horario corregido del mes actual: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/horario_mes_actual_corregido.csv
+📆 Calculando promedios diarios corregidos del mes actual...
+✅ Diario corregido consolidado: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/06_diarios_corregidos/promedio_diario_todas_estaciones_corregido.csv
+📈 Actualizando mensualizados y gráficas mensuales corregidas...
+✅ Gráficas mensuales corregidas en: /home/srvdpahidrologia/CENACE/Analisis_Q_outliers/09_graficas_mensuales_corregidas
+✅ Proceso finalizado correctamente.

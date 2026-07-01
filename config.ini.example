@@ -1,0 +1,12 @@
+[Postgres]
+host = REPLACE_ME
+port = 5432
+user = REPLACE_ME
+password = REPLACE_ME
+dbname = cenace
+
+[CENACE]
+url = REPLACE_ME
+port = 21
+username = REPLACE_ME
+password = REPLACE_ME

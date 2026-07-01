@@ -1,8 +1,11 @@
 *.docx
+!Caudal_Junio_26_2026.docx
 
 # Entornos y config
 venv/
 config.ini
+__pycache__/
+*.py[cod]
 
 # Logs y estado
 *.log
@@ -11,6 +14,7 @@ last_processed_ts.txt
 # Outputs grandes (NO subir a GitHub)
 *.csv
 *.json
+!boletin_hidroelectricas_config.json
 
 # Outputs específicos TAB_3 (por si acaso)
 TAB_3/*.csv
@@ -28,4 +32,8 @@ MIGRA_RELLENO/
 TAB_4/
 TAB_5/
 state/
-
+reportes_hidroelectricas/
+.locks/
+.cache/
+.playwright/
+*.tmp.docx

@@ -1,0 +1,140 @@
+{
+  "paths": {
+    "template_docx": "Caudal_Junio_26_2026.docx",
+    "output_root": "reportes_hidroelectricas"
+  },
+  "report": {
+    "last_observed_day": null,
+    "forecast_until": null,
+    "elaboration": "A. R."
+  },
+  "llm": {
+    "model": "gpt-4.1"
+  },
+  "wait_ms": 3000,
+  "default_viewport": {
+    "width": 1400,
+    "height": 900
+  },
+  "figures": [
+    {
+      "number": 1,
+      "source_type": "html",
+      "source": "TAB_2/grafico_Coca_Codo_Sinclair.html",
+      "selector": ".plotly-graph-div",
+      "caption": "Figura 1. Comparacion mensual de caudales en Coca Codo S."
+    },
+    {
+      "number": 2,
+      "source_type": "html",
+      "source": "TAB_4/grafico_Coca_Codo_Sinclair.html",
+      "selector": "#grafico",
+      "caption": "Figura 2. Comparacion de caudal diario en Coca Codo Sinclair."
+    },
+    {
+      "number": 3,
+      "source_type": "html",
+      "source": "TAB_3/grafico_Coca_Codo_Sinclair.html",
+      "selector": "#grafico",
+      "viewport": {
+        "width": 1500,
+        "height": 760
+      },
+      "caption": "Figura 3. Caudal horario en Coca Codo Sinclair."
+    },
+    {
+      "number": 4,
+      "source_type": "plotly_api",
+      "source": "https://services.geoglows.org/api/hydropowers/get-forecast-plot?hydropower=Coca%20Codo%20Sinclair&width=815&height=344&date={date}",
+      "selector": "#plot",
+      "viewport": {
+        "width": 815,
+        "height": 344
+      },
+      "caption": "Figura 4. Pronostico en Coca Codo Sinclair."
+    },
+    {
+      "number": 5,
+      "source_type": "plotly_api",
+      "source": "https://services.geoglows.org/api/hydroviewer/get-plots?comid=620905703&date={date}&width=869",
+      "selector": "#plot",
+      "viewport": {
+        "width": 869,
+        "height": 419
+      },
+      "caption": "Figura 5. Pronostico en rio Quijos."
+    },
+    {
+      "number": 6,
+      "source_type": "html",
+      "source": "TAB_2/grafico_Mazar.html",
+      "selector": ".plotly-graph-div",
+      "caption": "Figura 6. Comparacion mensual de caudales en Mazar."
+    },
+    {
+      "number": 7,
+      "source_type": "html",
+      "source": "TAB_4/grafico_Mazar.html",
+      "selector": "#grafico",
+      "caption": "Figura 7. Comparacion de caudal diario en Mazar."
+    },
+    {
+      "number": 8,
+      "source_type": "html",
+      "source": "TAB_3/grafico_Mazar.html",
+      "selector": "#grafico",
+      "viewport": {
+        "width": 1500,
+        "height": 760
+      },
+      "caption": "Figura 8. Caudal horario en Mazar."
+    },
+    {
+      "number": 9,
+      "source_type": "plotly_api",
+      "source": "https://services.geoglows.org/api/hydropowers/get-forecast-plot?hydropower=Mazar&width=847&height=344&date={date}",
+      "selector": "#plot",
+      "viewport": {
+        "width": 847,
+        "height": 344
+      },
+      "caption": "Figura 9. Pronostico en Mazar."
+    },
+    {
+      "number": 10,
+      "source_type": "html",
+      "source": "TAB_2/grafico_Daule_Peripa.html",
+      "selector": ".plotly-graph-div",
+      "caption": "Figura 10. Comparacion mensual de caudales en Daule Peripa."
+    },
+    {
+      "number": 11,
+      "source_type": "html",
+      "source": "TAB_4/grafico_Daule_Peripa.html",
+      "selector": "#grafico",
+      "caption": "Figura 11. Comparacion de caudal diario en Daule Peripa."
+    },
+    {
+      "number": 12,
+      "source_type": "html",
+      "source": "TAB_3/grafico_Daule_Peripa.html",
+      "selector": "#grafico",
+      "viewport": {
+        "width": 1500,
+        "height": 760
+      },
+      "caption": "Figura 12. Caudal horario en Daule Peripa."
+    },
+    {
+      "number": 13,
+      "source_type": "plotly_api",
+      "source": "https://services.geoglows.org/api/hydropowers/get-forecast-plot?hydropower=Daule%20Peripa&width=537&height=343&date={date}",
+      "selector": "#plot",
+      "viewport": {
+        "width": 537,
+        "height": 343
+      },
+      "caption": "Figura 13. Pronostico en Daule Peripa."
+    }
+  ]
+}
