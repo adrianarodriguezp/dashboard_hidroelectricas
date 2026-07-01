@@ -63,3 +63,14 @@ La recuperación solo puede sustituir a `CENACE` si:
 - Apartar la versión fallida sin eliminarla.
 - Conservar `CENACE_incidente_20260630`, el staging y el dump PostgreSQL.
 - Corregir y repetir toda la puerta de producción antes de un nuevo corte.
+
+## Estado de ejecución 2026-07-01
+
+- Dump PostgreSQL verificado: `/home/srvdpahidrologia/backups_cenace/cenace_pre_restore_20260701.dump`, SHA-256 `fba5c11278b926a815d8f3cc1be87f0d107f29c4bc51494e03f43419233aa788`.
+- Ingesta controlada: `caudales` pasó de 1.394.280 a 1.394.487 filas y `nivel` de 1.239.407 a 1.239.599; cero duplicados por estación/fecha.
+- Fechas máximas posteriores: caudales `2026-07-01 15:30:01`, nivel `2026-07-01 16:00:02`.
+- TAB1, TAB2, TAB3 y TAB4 generaron nueve gráficos cada uno.
+- DOCX validado: `Caudal_Julio_01_2026.docx`, 13 figuras/captions, SHA-256 `d50ff8bafdf58e7752d6ba0d12547ce5fbe3ad6559331eb05d195e83c593e96d`; copia CIFS con hash idéntico.
+- Commit local de recuperación previo a esta actualización: `d3f6d07`.
+- Clave deploy dedicada: `~/.ssh/id_ed25519_cenace`; fingerprint `SHA256:s9km8ZwTCS1RFFrrf7t56+5O6C3zQxbb7hWUxtQgNUE`.
+- Bloqueo pendiente: registrar la clave pública como Deploy key con escritura en GitHub; no ejecutar push, cutover ni reactivar cron antes de resolverlo.
