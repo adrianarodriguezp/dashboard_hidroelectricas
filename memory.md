@@ -73,4 +73,6 @@ La recuperación solo puede sustituir a `CENACE` si:
 - DOCX validado: `Caudal_Julio_01_2026.docx`, 13 figuras/captions, SHA-256 `d50ff8bafdf58e7752d6ba0d12547ce5fbe3ad6559331eb05d195e83c593e96d`; copia CIFS con hash idéntico.
 - Commit local de recuperación previo a esta actualización: `d3f6d07`.
 - Clave deploy dedicada: `~/.ssh/id_ed25519_cenace`; fingerprint `SHA256:s9km8ZwTCS1RFFrrf7t56+5O6C3zQxbb7hWUxtQgNUE`.
-- Bloqueo pendiente: registrar la clave pública como Deploy key con escritura en GitHub; no ejecutar push, cutover ni reactivar cron antes de resolverlo.
+- Deploy key registrada con escritura; rama de recuperación y `main` publicados mediante SSH.
+- Cutover completado por renombre: producción en `/home/srvdpahidrologia/CENACE` y evidencia intacta en `/home/srvdpahidrologia/CENACE_incidente_20260630`.
+- Ocho tareas CENACE reactivadas. Respaldo activo del crontab: `crontab_backup_20260701_activo.txt`, SHA-256 `8a9dd181578cc3ad800afbb1b1136bf65cde4be228b590bf897218cbc2bbdf36`.

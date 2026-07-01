@@ -25,6 +25,7 @@ TAB_3/*.json
 * - copia.py
 download.py.bak_*
 sync_if_new_hour.py.bak
+crontab_backup_*.txt
 
 # Carpetas locales de trabajo
 Anteriores/
