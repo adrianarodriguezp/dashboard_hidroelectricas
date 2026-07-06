@@ -6,21 +6,27 @@ venv/
 config.ini
 __pycache__/
 *.py[cod]
+.cache/
+.locks/
+.playwright/
 
 # Logs y estado
 *.log
+log_*.txt
 last_processed_ts.txt
+state/
 
 # Outputs grandes (NO subir a GitHub)
 *.csv
 *.json
+*.xlsx
+*.xls
 !boletin_hidroelectricas_config.json
+!config.ini.example
 
-# Outputs específicos TAB_3 (por si acaso)
-TAB_3/*.csv
-TAB_3/*.json
-
-# Backups y copias
+# Documentos y temporales
+*.docx
+*.tmp.docx
 *.bak
 * - copia.py
 download.py.bak_*
@@ -30,11 +36,21 @@ crontab_backup_*.txt
 # Carpetas locales de trabajo
 Anteriores/
 MIGRA_RELLENO/
-TAB_4/
 TAB_5/
-state/
 reportes_hidroelectricas/
-.locks/
-.cache/
-.playwright/
-*.tmp.docx
+
+# Salidas no publicables de análisis
+Analisis_Q_outliers/04_graficas_revision/
+Analisis_Q_outliers/09_graficas_mensuales_corregidas/
+Analisis_Q_outliers/log_*.txt
+TAB_2/log_*.txt
+
+# Archivos de datos dentro de tabs, si algún script los genera
+TAB_1/*.csv
+TAB_1/*.json
+TAB_2/*.csv
+TAB_2/*.json
+TAB_3/*.csv
+TAB_3/*.json
+TAB_4/*.csv
+TAB_4/*.json
