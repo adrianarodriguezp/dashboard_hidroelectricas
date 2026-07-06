@@ -50,6 +50,10 @@ def get_data():
     df = apply_station_coordinates(df)
     df["fecha_real"] = df["fecha_toma_dato"] - pd.to_timedelta("30min")
     df["fecha_dia"] = df["fecha_real"].dt.date
+
+    hoy = pd.Timestamp.now().date()
+    df = df[df["fecha_dia"] < hoy].copy()
+
     return df
 
 

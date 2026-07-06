@@ -25,7 +25,6 @@ REPO_DIR = project_path()
 PATHS_TO_COMMIT = [
     "TAB_3",
     "mapa_horario_hidro.html",
-    "horario_todas_estaciones.csv",
 ]
 
 EXPECTED_OUTPUTS = [
@@ -57,6 +56,7 @@ def get_conn():
 def read_last_processed_ts() -> str | None:
     if not STATE_FILE.exists():
         return None
+
     value = STATE_FILE.read_text(encoding="utf-8").strip()
     return value or None
 
@@ -82,6 +82,7 @@ def detect_last_ts_iso() -> str | None:
 
     if last_ts is None:
         return None
+
     return pd.Timestamp(last_ts).isoformat()
 
 
@@ -91,25 +92,35 @@ def validate_outputs() -> None:
         raise FileNotFoundError(f"Faltan salidas esperadas: {missing}")
 
 
-def git_push_horario(commit_msg: str) -> bool:
-    run(["git", "add", *PATHS_TO_COMMIT], "git add (horario)", cwd=REPO_DIR)
-
-    status = subprocess.run(
-        ["git", "status", "--porcelain"],
+def has_staged_changes() -> bool:
+    diff = subprocess.run(
+        ["git", "diff", "--cached", "--quiet"],
         cwd=str(REPO_DIR),
-        capture_output=True,
-        text=True,
-        check=True,
-    ).stdout.strip()
+    )
 
-    if not status:
-        print("No hay cambios para publicar.")
+    if diff.returncode == 0:
         return False
 
-    run(["git", "commit", "-m", commit_msg], "git commit (horario)", cwd=REPO_DIR)
+    if diff.returncode == 1:
+        return True
+
+    diff.check_returncode()
+    return False
+
+
+def git_push_horario(commit_msg: str) -> bool:
+    run(["git", "add", "--", *PATHS_TO_COMMIT], "git add (horario)", cwd=REPO_DIR)
+
+    if not has_staged_changes():
+        print("No hay cambios HTML para publicar.")
+        return False
+
+    run(["git", "commit", "-m", commit_msg, "--only", "--", *PATHS_TO_COMMIT], "git commit (horario)", cwd=REPO_DIR)
+
     remote = os.getenv("CENACE_GIT_REMOTE", "origin")
     branch = os.getenv("CENACE_GIT_BRANCH", "main")
     run(["git", "push", remote, f"HEAD:{branch}"], "git push (horario)", cwd=REPO_DIR)
+
     return True
 
 
@@ -122,20 +133,24 @@ def main() -> None:
         return
 
     print(f"Último timestamp válido en BD: {last_ts_iso}")
+
     previous_ts = read_last_processed_ts()
     if previous_ts == last_ts_iso:
         print("No hay dato nuevo. Finaliza sin cambios.")
         return
 
     run([str(VENV_PYTHON), str(HORARIO_SCRIPT)], "Generación horaria", cwd=SCRIPT_DIR)
+
     validate_outputs()
+
     published = git_push_horario(commit_msg=f"Auto actualización horaria: {last_ts_iso}")
+
     write_last_processed_ts(last_ts_iso)
 
     if published:
         print("Watcher horario: publicación completada.")
     else:
-        print("Watcher horario: no hubo cambios nuevos para publicar, pero el estado quedó sincronizado.")
+        print("Watcher horario: no hubo cambios HTML nuevos, pero el estado quedó sincronizado.")
 
 
 if __name__ == "__main__":
