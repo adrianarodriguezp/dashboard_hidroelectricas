@@ -1,0 +1,65 @@
+Iniciando lectura de mensualizados corregidos...
+OK: Estaciones encontradas para TAB_2: 9
+OK: HTML generado: grafico_Agoyan.html
+OK: HTML generado: grafico_Amaluza_Laterales.html
+OK: HTML generado: grafico_Amaluza_Total.html
+OK: HTML generado: grafico_Coca_Codo_Sinclair.html
+OK: HTML generado: grafico_Daule_Peripa.html
+OK: HTML generado: grafico_Delsitanisagua.html
+OK: HTML generado: grafico_M_S_Francisco.html
+OK: HTML generado: grafico_Mazar.html
+OK: HTML generado: grafico_Pisayambo.html
+OK: Index generado: /home/srvdpahidrologia/CENACE/TAB_2/index.html
+OK: TAB_2 HTML generado correctamente.
+Iniciando lectura de mensualizados corregidos...
+OK: Estaciones encontradas para TAB_2: 9
+OK: HTML generado: grafico_Agoyan.html
+OK: HTML generado: grafico_Amaluza_Laterales.html
+OK: HTML generado: grafico_Amaluza_Total.html
+OK: HTML generado: grafico_Coca_Codo_Sinclair.html
+OK: HTML generado: grafico_Daule_Peripa.html
+OK: HTML generado: grafico_Delsitanisagua.html
+OK: HTML generado: grafico_M_S_Francisco.html
+OK: HTML generado: grafico_Mazar.html
+OK: HTML generado: grafico_Pisayambo.html
+OK: Index generado: /home/srvdpahidrologia/CENACE/TAB_2/index.html
+OK: TAB_2 HTML generado correctamente.
+Iniciando lectura de mensualizados corregidos...
+OK: Estaciones encontradas para TAB_2: 9
+OK: HTML generado: grafico_Agoyan.html
+OK: HTML generado: grafico_Amaluza_Laterales.html
+OK: HTML generado: grafico_Amaluza_Total.html
+OK: HTML generado: grafico_Coca_Codo_Sinclair.html
+OK: HTML generado: grafico_Daule_Peripa.html
+OK: HTML generado: grafico_Delsitanisagua.html
+OK: HTML generado: grafico_M_S_Francisco.html
+OK: HTML generado: grafico_Mazar.html
+OK: HTML generado: grafico_Pisayambo.html
+OK: Index generado: /home/srvdpahidrologia/CENACE/TAB_2/index.html
+OK: TAB_2 HTML generado correctamente.
+Iniciando lectura de mensualizados corregidos...
+OK: Estaciones encontradas para TAB_2: 9
+OK: HTML generado: grafico_Agoyan.html
+OK: HTML generado: grafico_Amaluza_Laterales.html
+OK: HTML generado: grafico_Amaluza_Total.html
+OK: HTML generado: grafico_Coca_Codo_Sinclair.html
+OK: HTML generado: grafico_Daule_Peripa.html
+OK: HTML generado: grafico_Delsitanisagua.html
+OK: HTML generado: grafico_M_S_Francisco.html
+OK: HTML generado: grafico_Mazar.html
+OK: HTML generado: grafico_Pisayambo.html
+OK: Index generado: /home/srvdpahidrologia/CENACE/TAB_2/index.html
+OK: TAB_2 HTML generado correctamente.
+Iniciando lectura de mensualizados corregidos...
+OK: Estaciones encontradas para TAB_2: 9
+OK: HTML generado: grafico_Agoyan.html
+OK: HTML generado: grafico_Amaluza_Laterales.html
+OK: HTML generado: grafico_Amaluza_Total.html
+OK: HTML generado: grafico_Coca_Codo_Sinclair.html
+OK: HTML generado: grafico_Daule_Peripa.html
+OK: HTML generado: grafico_Delsitanisagua.html
+OK: HTML generado: grafico_M_S_Francisco.html
+OK: HTML generado: grafico_Mazar.html
+OK: HTML generado: grafico_Pisayambo.html
+OK: Index generado: /home/srvdpahidrologia/CENACE/TAB_2/index.html
+OK: TAB_2 HTML generado correctamente.
